@@ -27,8 +27,9 @@ class BankAccount:
         if self.balance<amount:
             
             print (f'Fondos insuficientes: el cliente {self.name}, {self.apellido} tiene saldo insuficiente \npor lo que no se puede hacer un retiro por ${amount} \nse cobrara una tarifa de $ 5\nel nuevo saldo es ${self.balance-5}\n')
-            return self
+            # return self
         else: self.balance-=amount
+        
         return self
 		# tu código aqui
     def saldo_cuenta_info(self):
